@@ -33,7 +33,7 @@ Output/Scalars:
 0.37021051, 0.22734619]
 
 Output/Images:
-![sampe_image](sample_image.png)
+![alt text](sample_image.png)
 ```
 Jupyter Notebook
 Along with the dataset, we also provide a Python Jupyter Notebook, that is a self-contained script to load, process, and test the dataset described above. In particular, we include a Neural Network designed to act as a surrogate for the JAG 1D Simulator. The neural network is implemented in Tensorflow.
