@@ -44,7 +44,9 @@ Along with the dataset, we also provide a Python Jupyter Notebook, that is a sel
 The provided notebook allows a user to load the dataset, load the neural network and train it such that given just the 5 input parameters, it predicts the scalars and images accurately. This can be done directly in the notebook, without any additional modifications. During training, intermediate predictions are also saved to disk (as specified by the user). We hope this serves as a starting point to build, test and play with the ICF-JAG simulation dataset.
 ### Authors
 
-Rushil Anirudh, Jayaraman J. Thiagarajan, Timo Bremer. For questions contact anirudh1@llnl.gov
+Rushil Anirudh, Jayaraman J. Thiagarajan, Timo Bremer. For questions (or suggestions and improvements) contact anirudh1@llnl.gov. This is a work in progress, so we welcome your feedback! 
+
+
 Publications that use this work will be available soon.
 
 ### License
