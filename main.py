@@ -12,9 +12,9 @@ from wae_metric import run_WAE as metric
 parser = argparse.ArgumentParser()
 parser.add_argument('-o', type=str, default='out',
                     help='Saving Results Directory')
-parser.add_argument('-m', type=str, default='models',
-                    help='Saving/Restoring CycleGAN Models')
-parser.add_argument('-train_ae', type=str, default='False',
+parser.add_argument('-m', type=str, default='weights',
+                    help='location to store weights')
+parser.add_argument('-train_ae', type=str, default='True',
                     help=' "-train_ae 0" to use pre-trained auto-encoder. "-train_ae 1": will train a new autoencoder before running the cycleGAN.')
 parser.add_argument('-ae_dir', type=str, default='wae_metric/pretrained',
                     help='Ignored if train_ae=True; else will load existing autoencoder')
@@ -28,10 +28,10 @@ train_ae = args.train_ae
 ae_dir = args.ae_dir
 datapath = args.d
 
-if train_ae in ['true', '1', 't', 'y', 'yes']:
+if train_ae in ['True', '1', 't', 'y', 'yes']:
     train_ae_b = True
-    ae_dir = 'wae_metric/custom_train_'+mdir
-    ae_dir_outs = 'wae_metric/custom_train_imgs'
+    ae_dir = 'wae_metric/model_'+mdir
+    ae_dir_outs = 'wae_metric/outs'
 else:
     train_ae_b = False
 

@@ -5,6 +5,8 @@
 
 import tensorflow as tf
 import numpy as np
+np.random.seed(4321)
+
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
@@ -40,9 +42,8 @@ def run(**kwargs):
 
 
     jag_inp, jag_sca, jag_img = load_dataset(datapath)
-    np.random.seed(4321)
     tr_id = np.random.choice(jag_sca.shape[0],int(jag_sca.shape[0]*0.95),replace=False)
-    print(tr_id[:10])
+
     te_id = list(set(range(jag_sca.shape[0])) - set(tr_id))
     X_train = jag_inp[tr_id,:]
     y_sca_train = jag_sca[tr_id,:]
@@ -66,7 +67,7 @@ def run(**kwargs):
 
 
 
-    print(X_test.shape,y_sca_test.shape,y_img_test.shape)
+    print("Dataset dimensions: ",X_test.shape,y_sca_test.shape,y_img_test.shape)
     dim_x = X_train.shape[1]
     dim_y_sca = y_sca_train.shape[1]
     dim_y_img = y_img_train.shape[1]
@@ -87,7 +88,7 @@ def run(**kwargs):
     y_mm = tf.concat([y_img,y_sca],axis=1)
 
     '''**** Encode the img, scalars ground truth --> latent vector for loss computation ****'''
-    y_latent_img = wae.gen_encoder_FCN(y_mm, dim_y_img_latent,train_mode)
+    y_latent_img = wae.gen_encoder_FCN(y_mm, dim_y_img_latent,train_mode=False)
 
     '''**** Train cycleGAN input params <--> latent space of (images, scalars) ****'''
 
@@ -103,7 +104,7 @@ def run(**kwargs):
     JagNet_MM.run(train_mode)
 
     '''**** Decode the prediction from latent vector --> img, scalars ****'''
-    y_img_out = wae.var_decoder_FCN(JagNet_MM.output_fake, dim_y_img+dim_y_sca,train_mode)
+    y_img_out = wae.var_decoder_FCN(JagNet_MM.output_fake, dim_y_img+dim_y_sca,train_mode=False)
 
 
     t_vars = tf.global_variables()
@@ -168,7 +169,7 @@ def run(**kwargs):
 
             test_imgs_plot(fdir,it,data_dict)
 
-            # save_path = saver.save(sess, "./"+modeldir+"/model_"+str(it)+".ckpt")
+            save_path = saver.save(sess, "./"+modeldir+"/model_"+str(it)+".ckpt")
 
 if __name__=='__main__':
     run()

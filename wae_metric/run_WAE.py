@@ -1,6 +1,6 @@
 import tensorflow as tf
 import numpy as np
-np.random.seed(1)
+np.random.seed(4321)
 
 import matplotlib
 matplotlib.use('Agg')
@@ -39,7 +39,7 @@ def run(**kwargs):
     datapath = kwargs.get('datapath','../../data/')
     vizdir = kwargs.get('vizdir','graphs')
     lam = kwargs.get('lam',1e-4)
-    dim_z = kwargs.get('dimz',40)
+    dim_z = kwargs.get('dimz',LATENT_SPACE_DIM)
 
 
     # if not os.path.exists(fdir):
@@ -51,9 +51,8 @@ def run(**kwargs):
     jag_inp, jag_sca, jag_img = load_dataset(datapath)
     jag = np.hstack((jag_img,jag_sca))
 
-    np.random.seed(4321)
+
     tr_id = np.random.choice(jag.shape[0],int(jag.shape[0]*0.95),replace=False)
-    print(tr_id[:10])
     te_id = list(set(range(jag.shape[0])) - set(tr_id))
 
     X_train = jag[tr_id,:]
@@ -64,12 +63,8 @@ def run(**kwargs):
     y_test_set = jag[te_id,:]
 
     batch_size = 100
-    dim_eps = 10
 
     dim_image = jag.shape[1]
-
-    c = 0
-    keep_prob = 1
 
 
     # Image  to Image
@@ -122,7 +117,6 @@ def run(**kwargs):
         randid = np.random.choice(X_train.shape[0],batch_size,replace=False)
         y_mb = X_train[randid,:]
         X_mb = X_train[randid,:]
-
 
 
         z_mb = sample_z(batch_size,dim_z)
