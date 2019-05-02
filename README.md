@@ -15,7 +15,7 @@ The JAG model has been designed to give a rapid description of the observables f
 This package was built and tested using `Tensorflow 1.8.0`. It also depends on standard Python packages such as `NumPy`, `Matplotlib` for basic data loading and plotting utilities.
 
 ### Description
-The size of the dataset provided (in 'data/') are as follows:
+A dataset is provided to test/train the models. This is a tarball inside 'data/', which contains .npy files for 10K images, scalars, and the coresponding input parameters. The size of the dataset provided (in 'data/') are as follows:
 ```
 Input: (9984, 5), Output/Scalars: (9984, 22), Output/Images: (9984, 16384). Images are interpreted as (-1,64,64,4); i.e., 4 channels of 64x64 images.
 ```
