@@ -33,7 +33,9 @@ Output/Scalars:
 0.37021051, 0.22734619]
 
 ```
-Output/Images:
+##### Output/Images:
+
+
 ![alt text](sample_image.png)
 
 Jupyter Notebook
