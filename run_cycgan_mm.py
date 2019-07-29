@@ -32,13 +32,15 @@ def run(**kwargs):
     modeldir = kwargs.get('modeldir','./pretrained_model')
     ae_path = kwargs.get('ae_dir','./wae_metric/pretrained_model')
     datapath = kwargs.get('datapath','./data/')
-
+    visdir = './tensorboard_plots'
     if not os.path.exists(fdir):
         os.makedirs(fdir)
 
     if not os.path.exists(modeldir):
         os.makedirs(modeldir)
 
+    if not os.path.exists(visdir):
+        os.makedirs(visdir)
 
 
     jag_inp, jag_sca, jag_img = load_dataset(datapath)
@@ -105,7 +107,12 @@ def run(**kwargs):
 
     '''**** Decode the prediction from latent vector --> img, scalars ****'''
     y_img_out = wae.var_decoder_FCN(JagNet_MM.output_fake, dim_y_img+dim_y_sca,train_mode=False)
+    img_loss = tf.reduce_mean(tf.square(y_img_out[:,:16384] - y_img))
+    sca_loss = tf.reduce_mean(tf.square(y_img_out[:,16384:] - y_sca))
 
+    fwd_img_summary = tf.summary.scalar(name='Image Loss', tensor=img_loss)
+    fwd_sca_summary = tf.summary.scalar(name='Scalar Loss', tensor=sca_loss)
+    merged = tf.summary.merge_all()
 
     t_vars = tf.global_variables()
     m_vars = [var for var in t_vars if 'wae' in var.name]
@@ -125,6 +132,8 @@ def run(**kwargs):
     if ckpt and ckpt.model_checkpoint_path:
         saver.restore(sess, ckpt.model_checkpoint_path)
         print("************ Model restored! **************")
+
+    writer = tf.summary.FileWriter(visdir+'/{}'.format(modeldir), sess.graph)
 
     i = 0
     for it in range(100000):
@@ -157,6 +166,9 @@ def run(**kwargs):
 
             nTest=16
             x_test_mb = X_test[-nTest:,:]
+            summary_val = sess.run(merged,feed_dict={x:X_test,train_mode:False})
+            
+            writer.add_summary(summary_val, it)
 
             samples,samples_x = sess.run([y_img_out,JagNet_MM.input_cyc],
                                            feed_dict={x: x_test_mb,train_mode:False})
