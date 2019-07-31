@@ -166,8 +166,8 @@ def run(**kwargs):
 
             nTest=16
             x_test_mb = X_test[-nTest:,:]
-            summary_val = sess.run(merged,feed_dict={x:X_test,train_mode:False})
-            
+            summary_val = sess.run(merged,feed_dict={x:X_test,y_sca:y_sca_test,y_img:y_img_test,train_mode:False})
+
             writer.add_summary(summary_val, it)
 
             samples,samples_x = sess.run([y_img_out,JagNet_MM.input_cyc],

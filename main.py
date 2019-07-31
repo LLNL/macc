@@ -39,7 +39,8 @@ if train_ae_b:
     print('****** Training the autoencoder *******')
     metric.run(fdir=ae_dir_outs,modeldir=ae_dir,datapath=datapath)
     print('****** Training the cycleGAN *******')
-    cycGAN.run(fdir,mdir,ae_dir)
+    # cycGAN.run(fdir,mdir,ae_dir)
+    cycGAN.run(fdir=fdir,modeldir=mdir,ae_dir=ae_dir,datapath=datapath)
 else:
     print('****** Training the cycleGAN with pre-trained autoencoder *******')
     cycGAN.run(fdir=fdir,modeldir=mdir,ae_dir=ae_dir,datapath=datapath)
