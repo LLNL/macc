@@ -50,7 +50,11 @@ The provided notebook allows a user to load the dataset, load the neural network
 Rushil Anirudh, Jayaraman J. Thiagarajan, Timo Bremer. For questions (or suggestions and improvements) contact anirudh1@llnl.gov. This is a work in progress, so we welcome your feedback! 
 
 
-Publications that use this work will be available soon.
+### Related Publications
+* Anirudh, R., et al.Exploring Generative Physics Models with Scientific Priors in Inertial Confinement Fusion, To appear in [ML4PhysicalSciences](https://ml4physicalsciences.github.io/) workshop at NeurIPS 2019. [[paper]](https://arxiv.org/abs/1910.01666)
+* Jacobs, S., et al. Parallelizing Training of Deep Generative Models on Massive Scientific Datasets. To appear in IEEE CLUSTER, 2019. [[paper]](https://arxiv.org/abs/1910.02270)
+* Liu, S., et al. "Scalable Topological Data Analysis and Visualization for Evaluating Data-Driven Models in Scientific Applications." IEEE transactions on visualization and computer graphics (2019). [[paper]](https://arxiv.org/abs/1907.08325)
+
 
 ### License
 This code is distributed under the terms of the MIT license. All new contributions must be made under this license.
