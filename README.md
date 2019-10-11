@@ -55,6 +55,18 @@ Rushil Anirudh, Jayaraman J. Thiagarajan, Timo Bremer. For questions (or suggest
 * Jacobs, S., et al. Parallelizing Training of Deep Generative Models on Massive Scientific Datasets, to appear in IEEE CLUSTER, 2019. [[paper]](https://arxiv.org/abs/1910.02270)
 * Liu, S., et al. Scalable Topological Data Analysis and Visualization for Evaluating Data-Driven Models in Scientific Applications, in IEEE transactions on visualization and computer graphics (2019). [[paper]](https://arxiv.org/abs/1907.08325)
 
+### Citation
+If you use this work, please consider citing it as follows: 
+
+```@misc{osti_1510714,
+title = {Cycle Consistent Surrogate for Inertial Confinement Fusion},
+author = {Anirudh, Rushil and Bremer, Peer-Timo and Thiagrarjan, Jayaraman Jayaraman and USDOE National Nuclear Security Administration},
+url = {https://www.osti.gov//servlets/purl/1510714},
+doi = {10.11578/dc.20190503.2},
+year = {2019},
+month = {2},
+}
+```
 
 ### License
 This code is distributed under the terms of the MIT license. All new contributions must be made under this license.
