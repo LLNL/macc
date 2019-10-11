@@ -51,9 +51,9 @@ Rushil Anirudh, Jayaraman J. Thiagarajan, Timo Bremer. For questions (or suggest
 
 
 ### Related Publications
-* Anirudh, R., et al.Exploring Generative Physics Models with Scientific Priors in Inertial Confinement Fusion, To appear in [ML4PhysicalSciences](https://ml4physicalsciences.github.io/) workshop at NeurIPS 2019. [[paper]](https://arxiv.org/abs/1910.01666)
-* Jacobs, S., et al. Parallelizing Training of Deep Generative Models on Massive Scientific Datasets. To appear in IEEE CLUSTER, 2019. [[paper]](https://arxiv.org/abs/1910.02270)
-* Liu, S., et al. "Scalable Topological Data Analysis and Visualization for Evaluating Data-Driven Models in Scientific Applications." IEEE transactions on visualization and computer graphics (2019). [[paper]](https://arxiv.org/abs/1907.08325)
+* Anirudh, R., et al. Exploring Generative Physics Models with Scientific Priors in Inertial Confinement Fusion, to appear in [ML4PhysicalSciences](https://ml4physicalsciences.github.io/) workshop at NeurIPS 2019. [[paper]](https://arxiv.org/abs/1910.01666)
+* Jacobs, S., et al. Parallelizing Training of Deep Generative Models on Massive Scientific Datasets, to appear in IEEE CLUSTER, 2019. [[paper]](https://arxiv.org/abs/1910.02270)
+* Liu, S., et al. Scalable Topological Data Analysis and Visualization for Evaluating Data-Driven Models in Scientific Applications, in IEEE transactions on visualization and computer graphics (2019). [[paper]](https://arxiv.org/abs/1907.08325)
 
 
 ### License
