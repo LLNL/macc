@@ -13,7 +13,8 @@ The JAG model has been designed to give a rapid description of the observables f
 
 ### Dependencies
 This package was built and tested using `Tensorflow 1.8.0`. It also depends on standard Python packages such as `NumPy`, `Matplotlib` for basic data loading and plotting utilities.
-
+### Pre-trained weights
+Checkpoints for the models are available [[here]](https://drive.google.com/drive/u/0/folders/1jgDegfXqNFJjm_jQfnqzjcDQ9yNNQ2Pq).
 ### Description
 A dataset is provided to test/train the models. This is a tarball inside 'data/', which contains .npy files for 10K images, scalars, and the coresponding input parameters. The size of the dataset provided (in 'data/') are as follows:
 ```
@@ -42,6 +43,8 @@ Jupyter Notebook
 Along with the dataset, we also provide a Python Jupyter Notebook, that is a self-contained script to load, process, and test the dataset described above. In particular, we include a Neural Network designed to act as a surrogate for the JAG 1D Simulator. The neural network is implemented in Tensorflow.
 
 The provided notebook allows a user to load the dataset, load the neural network and train it such that given just the 5 input parameters, it predicts the scalars and images accurately. This can be done directly in the notebook, without any additional modifications. During training, intermediate predictions are also saved to disk (as specified by the user). We hope this serves as a starting point to build, test and play with the ICF-JAG simulation dataset.
+
+**More Information on Cycle Training:** I gave a talk recently outlining some of the methods used here, and their benefits in surrogate modeling. Slides can be found [[here]](https://drive.google.com/file/d/1aUI0nMF_DQda9a1dE8FA_ZSqwcR4zLCQ/view)
 ### Authors
 
 Rushil Anirudh, Jayaraman J. Thiagarajan, Timo Bremer. For questions (or suggestions and improvements) contact anirudh1@llnl.gov. This is a work in progress, so we welcome your feedback! 
