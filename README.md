@@ -55,6 +55,11 @@ Rushil Anirudh, Jayaraman J. Thiagarajan, Timo Bremer. For questions (or suggest
 * Jacobs, S., et al. Parallelizing Training of Deep Generative Models on Massive Scientific Datasets, to appear in IEEE CLUSTER, 2019. [[paper]](https://arxiv.org/abs/1910.02270)
 * Liu, S., et al. Scalable Topological Data Analysis and Visualization for Evaluating Data-Driven Models in Scientific Applications, in IEEE transactions on visualization and computer graphics (2019). [[paper]](https://arxiv.org/abs/1907.08325)
 
+
+### Dataset Citation
+This dataset was developed by Jim Gaffney (gaffney3@llnl.gov) and others at Lawrence Livermore National Laboratory. If you use this dataset in your work, please contact us for the citation.
+
+
 ### Software Citation
 If you use this software, please consider citing it as follows: 
 
