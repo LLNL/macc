@@ -45,10 +45,6 @@ Along with the dataset, we also provide a Python Jupyter Notebook, that is a sel
 The provided notebook allows a user to load the dataset, load the neural network and train it such that given just the 5 input parameters, it predicts the scalars and images accurately. This can be done directly in the notebook, without any additional modifications. During training, intermediate predictions are also saved to disk (as specified by the user). We hope this serves as a starting point to build, test and play with the ICF-JAG simulation dataset. 
 
 **More Information on Cycle Training:** I gave a talk recently outlining some of the methods used here, and their benefits in surrogate modeling. Slides can be found [[here]](https://drive.google.com/file/d/1aUI0nMF_DQda9a1dE8FA_ZSqwcR4zLCQ/view)
-### Authors
-
-Rushil Anirudh, Jayaraman J. Thiagarajan, Timo Bremer. For questions (or suggestions and improvements) contact anirudh1@llnl.gov. This is a work in progress, so we welcome your feedback! 
-
 
 ### Related Publications
 * Anirudh, R., et al. Exploring Generative Physics Models with Scientific Priors in Inertial Confinement Fusion, to appear in [ML4PhysicalSciences](https://ml4physicalsciences.github.io/) workshop at NeurIPS 2019. [[paper]](https://arxiv.org/abs/1910.01666)
@@ -72,7 +68,6 @@ year = {2019},
 month = {2},
 }
 ```
-
 ### License
 This code is distributed under the terms of the MIT license. All new contributions must be made under this license.
 LLNL-CODE-772361
