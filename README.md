@@ -1,8 +1,8 @@
 
-# JAG ICF Dataset for Scientific Machine Learning
+# Cycle Consistent Surrogate for Inertial Confinement Fusion
 This code contains pre-trained machine learning models, architectures and implementations for building surrogate models in scientific machine learning (SciML). SciML is a growing area, with a lot of unique challenges and problems. A lot of them are outlined in the Department of Energy's recent report on "Basic Research Needs for Scientific Machine Learning " [[pdf]](https://www.osti.gov/servlets/purl/1478744).
 
-### The JAG Simulator for ICF
+### Dataset from JAG Simulator for ICF
 
 The JAG model has been designed to give a rapid description of the observables from ICF experiments, which are all generated very late in the implosion. In this way the very complex and computationally expensive transport models needed to describe the capsule drive can be avoided, allowing a single solution in $\tilde$ seconds. The trade-off is that JAG inputs do not relate to actual experimental observables, rather the state of the implosion once the laser drive has switched off. At that point, an analytic description of the spatial profile inside the hotspot can be found [1,2], leaving only a set of coupled ODEs describing the temporal energy balance inside the entire problem which can be solved easily [3]. The various terms in the energy balance equation relate to different physics processes (radiation, electron conduction, heating by alpha particles, etc), making JAG useful for investigating the role of various potentially uncertain physics models. Combined with a thin-shell model describing the 3D hydrodynamic evolution of the hotspot [4], JAG has a detailed description of the spatial and temporal evolution of all thermodynamic variables which can be post-process to predict a full range of experimental observables
 
@@ -46,7 +46,7 @@ The provided notebook allows a user to load the dataset, load the neural network
 
 **More Information on Cycle Training:** I gave a talk recently outlining some of the methods used here, and their benefits in surrogate modeling. Slides can be found [[here]](https://drive.google.com/file/d/1aUI0nMF_DQda9a1dE8FA_ZSqwcR4zLCQ/view)
 
-### Related Publications
+### Related Publications Using this Dataset
 * Anirudh, R., et al. Exploring Generative Physics Models with Scientific Priors in Inertial Confinement Fusion, to appear in [ML4PhysicalSciences](https://ml4physicalsciences.github.io/) workshop at NeurIPS 2019. [[paper]](https://arxiv.org/abs/1910.01666)
 * Jacobs, S., et al. Parallelizing Training of Deep Generative Models on Massive Scientific Datasets, to appear in IEEE CLUSTER, 2019. [[paper]](https://arxiv.org/abs/1910.02270)
 * Liu, S., et al. Scalable Topological Data Analysis and Visualization for Evaluating Data-Driven Models in Scientific Applications, in IEEE transactions on visualization and computer graphics (2019). [[paper]](https://arxiv.org/abs/1907.08325)
