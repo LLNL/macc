@@ -1,15 +1,19 @@
+import os
+import shutil
+import pickle as pkl
+import argparse
+
 import tensorflow as tf
 import numpy as np
+
 import matplotlib
 # matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
-import os
-import shutil
-import cPickle as pkl
-import argparse
 from sklearn.preprocessing import MinMaxScaler, scale
+
 from utils import *
+
 
 class cycModel_MM(object):
     def __init__(self,input_params,outputs,param_dim,output_dim,L_adv,L_cyc,L_rec):

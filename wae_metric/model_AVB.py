@@ -1,8 +1,10 @@
 '''Models'''
 
 import tensorflow as tf
-from utils import *
-from utils import spectral_norm as SN
+
+from .utils import *
+from .utils import spectral_norm as SN
+
 
 def xavier_init(size,name=None):
     in_dim = size[0]
