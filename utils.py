@@ -1,19 +1,22 @@
+import os
+import shutil
+import pickle as pkl
+import argparse
+
 import tensorflow as tf
+from tensorflow.contrib.layers.python.layers import batch_norm as batch_norm
 import numpy as np
+
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
-import os
-import shutil
-import cPickle as pkl
-import argparse
-from sklearn.preprocessing import MinMaxScaler, scale
-from tensorflow.contrib.layers.python.layers import batch_norm as batch_norm
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
+from sklearn.preprocessing import MinMaxScaler, scale
 
 IMAGE_SIZE = 50
+
 
 def log(x):
     return tf.log(x + 1e-8)

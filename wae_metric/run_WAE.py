@@ -1,3 +1,8 @@
+import os
+import shutil
+import pickle as pkl
+import argparse
+
 import tensorflow as tf
 import numpy as np
 np.random.seed(4321)
@@ -6,14 +11,12 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
-import os
-from model_AVB import *
-import shutil
-import cPickle as pkl
-import argparse
 from sklearn.preprocessing import MinMaxScaler
 
+from .model_AVB import *
+
 LATENT_SPACE_DIM = 20
+
 
 def sample_z(L,dim,type='uniform'):
     if type == 'hypercircle':
