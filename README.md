@@ -57,13 +57,13 @@ If you use this dataset, please consider citing it as follows:
 
 ```
 @misc{JAG_LLNL,
-title = {The JAG inertial confinement fusion simulation dataset for multi-modal scientific deep learning.},
-author = {Gaffney, Jim A.; Anirudh, Rushil; Bremer, Peer-Timo; Hammer, Jim; Hysom, David; Jacobs, Sam A.; Peterson, J. Luc; Robinson, Peter; Spears, Brian K.; Springer, Paul T.; Thiagarajan, Jayaraman J.; Van Essen, Brian; Yeom, Jae-Seung},
-url = {https://library.ucsd.edu/dc/object/bb5534097t},
-howpublished = {In Lawrence Livermore National Laboratory (LLNL) Open Data Initiative. UC San Diego Library Digital Collections.},
-doi = {https://doi.org/10.6075/J0RV0M27},
-year = {2020},
-month = {3},
+	title = {The JAG inertial confinement fusion simulation dataset for multi-modal scientific deep learning.},
+	author = {Gaffney, Jim A. and Anirudh, Rushil and Bremer, Peer-Timo and Hammer, Jim and Hysom, David and Jacobs, Sam A. and Peterson, J. Luc and Robinson, Peter and Spears, 	Brian K. and Springer, Paul T. and Thiagarajan, Jayaraman J. and Van Essen, Brian and Yeom, Jae-Seung},
+	url = {https://library.ucsd.edu/dc/object/bb5534097t},
+	howpublished = {In Lawrence Livermore National Laboratory (LLNL) Open Data Initiative. UC San Diego Library Digital Collections.},
+	doi = {https://doi.org/10.6075/J0RV0M27},
+	year = {2020},
+	month = {3}
 }
 ```
 ### Software Citation
@@ -76,7 +76,7 @@ author = {Anirudh, Rushil and Bremer, Peer-Timo and Thiagrarjan, Jayaraman Jayar
 url = {https://www.osti.gov//servlets/purl/1510714},
 doi = {10.11578/dc.20190503.2},
 year = {2019},
-month = {2},
+month = {2}
 }
 ```
 ### License
