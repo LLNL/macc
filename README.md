@@ -55,7 +55,8 @@ The provided notebook allows a user to load the dataset, load the neural network
 ### Dataset Citation
 If you use this dataset, please consider citing it as follows: 
 
-```@misc{osti_1510714,
+```
+@misc{JAG_LLNL,
 title = {The JAG inertial confinement fusion simulation dataset for multi-modal scientific deep learning.},
 author = {Gaffney, Jim A.; Anirudh, Rushil; Bremer, Peer-Timo; Hammer, Jim; Hysom, David; Jacobs, Sam A.; Peterson, J. Luc; Robinson, Peter; Spears, Brian K.; Springer, Paul T.; Thiagarajan, Jayaraman J.; Van Essen, Brian; Yeom, Jae-Seung},
 url = {https://library.ucsd.edu/dc/object/bb5534097t},
@@ -68,7 +69,8 @@ month = {3},
 ### Software Citation
 If you use this software, please consider citing it as follows: 
 
-```@misc{osti_1510714,
+```
+@misc{osti_1510714,
 title = {Cycle Consistent Surrogate for Inertial Confinement Fusion},
 author = {Anirudh, Rushil and Bremer, Peer-Timo and Thiagrarjan, Jayaraman Jayaraman and USDOE National Nuclear Security Administration},
 url = {https://www.osti.gov//servlets/purl/1510714},
