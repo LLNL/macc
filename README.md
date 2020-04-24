@@ -47,7 +47,7 @@ The provided notebook allows a user to load the dataset, load the neural network
 **More Information on Cycle Training:** I gave a talk recently outlining some of the methods used here, and their benefits in surrogate modeling. Slides can be found [[here]](https://drive.google.com/file/d/1aUI0nMF_DQda9a1dE8FA_ZSqwcR4zLCQ/view)
 
 ### Related Publications Using this Dataset
-* Anirudh, R., et al. improved surrogates in inertial confinement fusion with manifold and cycle consistencies, in [Proc. of National Academy of Sciences (PNAS)](https://www.pnas.org/content/early/2020/04/17/1916634117). April 2020. 
+* Anirudh, R., et al. Improved surrogates in inertial confinement fusion with manifold and cycle consistencies, in Proc. of National Academy of Sciences (PNAS), April 2020. [[Paper]](https://www.pnas.org/content/early/2020/04/17/1916634117). 
 * Anirudh, R., et al. Exploring Generative Physics Models with Scientific Priors in Inertial Confinement Fusion, to appear in [ML4PhysicalSciences](https://ml4physicalsciences.github.io/) workshop at NeurIPS 2019. [[paper]](https://arxiv.org/abs/1910.01666)
 * Jacobs, S., et al. Parallelizing Training of Deep Generative Models on Massive Scientific Datasets, to appear in IEEE CLUSTER, 2019. [[paper]](https://arxiv.org/abs/1910.02270)
 * Liu, S., et al. Scalable Topological Data Analysis and Visualization for Evaluating Data-Driven Models in Scientific Applications, in IEEE transactions on visualization and computer graphics (2019). [[paper]](https://arxiv.org/abs/1907.08325)
