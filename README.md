@@ -68,17 +68,24 @@ If you use this dataset, please consider citing it as follows:
 }
 ```
 ### Software Citation
-If you use this software, please consider citing it as follows: 
+If you use this code, please consider citing our paper as follows: 
 
 ```
-@misc{osti_1510714,
-title = {Cycle Consistent Surrogate for Inertial Confinement Fusion},
-author = {Anirudh, Rushil and Bremer, Peer-Timo and Thiagrarjan, Jayaraman Jayaraman and USDOE National Nuclear Security Administration},
-url = {https://www.osti.gov//servlets/purl/1510714},
-doi = {10.11578/dc.20190503.2},
-year = {2019},
-month = {2}
+@article {Anirudh9741,
+	author = {Anirudh, Rushil and Thiagarajan, Jayaraman J. and Bremer, Peer-Timo and Spears, Brian K.},
+	title = {Improved surrogates in inertial confinement fusion with manifold and cycle consistencies},
+	volume = {117},
+	number = {18},
+	pages = {9741--9746},
+	year = {2020},
+	doi = {10.1073/pnas.1916634117},
+	publisher = {National Academy of Sciences},
+	issn = {0027-8424},
+	URL = {https://www.pnas.org/content/117/18/9741},
+	eprint = {https://www.pnas.org/content/117/18/9741.full.pdf},
+	journal = {Proceedings of the National Academy of Sciences}
 }
+
 ```
 ### License
 This code is distributed under the terms of the MIT license. All new contributions must be made under this license.
