@@ -15,7 +15,7 @@ parser.add_argument('-o', type=str, default='out',
 parser.add_argument('-m', type=str, default='weights',
                     help='location to store weights')
 parser.add_argument('-train_ae', type=str, default='True',
-                    help=' "-train_ae 0" to use pre-trained auto-encoder. "-train_ae 1": will train a new autoencoder before running the cycleGAN.')
+                    help=' "-train_ae 0" to use pre-trained auto-encoder. "-train_ae 1": will train a new autoencoder before running the surrogate training.')
 parser.add_argument('-ae_dir', type=str, default='wae_metric/pretrained',
                     help='Ignored if train_ae=True; else will load existing autoencoder')
 parser.add_argument('-d', type=str, default='./data/',
@@ -38,9 +38,9 @@ else:
 if train_ae_b:
     print('****** Training the autoencoder *******')
     metric.run(fdir=ae_dir_outs,modeldir=ae_dir,datapath=datapath)
-    print('****** Training the cycleGAN *******')
+    print('****** Training the macc surrogate *******')
     # cycGAN.run(fdir,mdir,ae_dir)
     cycGAN.run(fdir=fdir,modeldir=mdir,ae_dir=ae_dir,datapath=datapath)
 else:
-    print('****** Training the cycleGAN with pre-trained autoencoder *******')
+    print('****** Training the macc surrogate with pre-trained autoencoder *******')
     cycGAN.run(fdir=fdir,modeldir=mdir,ae_dir=ae_dir,datapath=datapath)
