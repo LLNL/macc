@@ -18,7 +18,7 @@ Checkpoints for the models are available [[here]](https://drive.google.com/drive
 ### Description
 A dataset is provided to test/train the models. This is a tarball inside 'data/', which contains .npy files for 10K images, scalars, and the coresponding input parameters. The size of the dataset provided (in 'data/') are as follows:
 ```
-Input: (9984, 5), Output/Scalars: (9984, 22), Output/Images: (9984, 16384). Images are interpreted as (-1,64,64,4); i.e., 4 channels of 64x64 images.
+Input: (9984, 5), Output/Scalars: (9984, 15), Output/Images: (9984, 16384). Images are interpreted as (-1,64,64,4); i.e., 4 channels of 64x64 images.
 ```
 As an example:
 Here are input parameter for a single run (sample `0` in the dataset)
